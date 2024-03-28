@@ -1,0 +1,113 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.toAdd {
+  position: fixed;
+  bottom: 20px; /* Adjust the bottom value as per your requirement */
+  right: 20px; /* Adjust the right value as per your requirement */
+  z-index: 9999; /* Set a high z-index value to ensure the button is above other content */
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.toAddPostOrPatient {
+  position: fixed;
+  bottom: 80px; /* Adjust the bottom value as per your requirement */
+  right: 20px; /* Adjust the right value as per your requirement */
+  z-index: 9999; /* Set a high z-index value to ensure the div is above other content */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toAddPostOrPatient input[type="text"],
+.toAddPostOrPatient button {
+  margin: 0 10px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.toAddPostOrPatient button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.toAddPostOrPatient button:hover {
+  background-color: #45a049;
+}
+
+.welcome {
+  text-align: center; /* Center the content horizontally */
+  margin: 50px auto; /* Add some margin for spacing */
+}
+
+.welcome h2 {
+  font-size: 2em; /* Increase heading size */
+  margin-bottom: 20px; /* Add some space after the heading */
+}
+
+.welcome a {
+  color: #333; /* Set link color */
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px; /* Add padding for better visual separation */
+  border: 1px solid #ddd; /* Add a subtle border */
+  border-radius: 5px; /* Add rounded corners */
+  transition: all 0.2s ease-in-out; /* Add a smooth hover effect */
+}
+
+.welcome a:hover {
+  background-color: #eee; /* Change background color on hover */
+}
